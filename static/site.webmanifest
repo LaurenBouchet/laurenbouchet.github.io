@@ -1,0 +1,9 @@
+{
+  "name": "Lauren Bouchet — Consultante en allaitement",
+  "short_name": "Lauren Bouchet",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f0e7",
+  "theme_color": "#f7f0e7",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
