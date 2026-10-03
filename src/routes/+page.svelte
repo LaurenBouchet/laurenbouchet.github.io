@@ -2,6 +2,7 @@
 import BookingButton from "#lib/components/BookingButton.svelte"
 import Header from "#lib/components/Header.svelte"
 import Head from "#lib/components/Head.svelte"
+import Faq from "#lib/components/Faq.svelte"
 
 const concerns = [
   "Douleurs pendant l’allaitement",
@@ -74,7 +75,7 @@ const concerns = [
         <article>
           <div class="format-image" aria-hidden="true"></div>
           <h3>À Dijon, et ses alentours</h3>
-          <p>Dans un rayon d’environ 30 km.</p>
+          <p>Dans un rayon de 20 km.</p>
         </article>
         <article>
           <div class="format-image" aria-hidden="true"></div>
@@ -168,6 +169,8 @@ const concerns = [
         </figure>
       </div>
     </section>
+
+    <Faq />
 
     <section class="cta-section" id="rendez-vous" aria-labelledby="cta-title">
       <h2 id="cta-title">Faisons le point sur votre allaitement</h2>
