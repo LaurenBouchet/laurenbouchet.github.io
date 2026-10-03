@@ -1,5 +1,5 @@
 <script lang="ts">
-  import BookingButton from "$lib/components/BookingButton.svelte"
+  import BookingButton from "#lib/components/BookingButton.svelte"
 </script>
 
 <header>

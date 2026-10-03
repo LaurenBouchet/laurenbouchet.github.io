@@ -1,7 +1,7 @@
 <script lang="ts">
-  import BookingButton from "$lib/components/BookingButton.svelte"
-  import Header from "$lib/components/Header.svelte"
-  import Head from "$lib/components/Head.svelte"
+  import BookingButton from "#lib/components/BookingButton.svelte"
+  import Header from "#lib/components/Header.svelte"
+  import Head from "#lib/components/Head.svelte"
 
   const concerns = [
     "Douleurs pendant l’allaitement",
