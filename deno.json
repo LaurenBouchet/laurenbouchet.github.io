@@ -1,0 +1,41 @@
+{
+  "nodeModulesDir": "auto",
+  "unstable": ["fmt-component"],
+  "exclude": [
+    "node_modules/",
+    ".svelte-kit/",
+    ".vite/",
+    "build/",
+    "dist/",
+    "inputs/",
+    "AGENTS.md",
+    "QUESTIONS.md"
+  ],
+  "imports": {
+    "#lib/": "./src/lib/",
+    "@sveltejs/adapter-static": "npm:@sveltejs/adapter-static@^4.0.0",
+    "@sveltejs/kit": "npm:@sveltejs/kit@^3.0.0",
+    "@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^7.0.0",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.3",
+    "svelte": "npm:svelte@^5.57.1",
+    "svelte-check": "npm:svelte-check@^4.7.6",
+    "tailwindcss": "npm:tailwindcss@^4.3.3",
+    "typescript": "npm:typescript@^6.0.0",
+    "vite": "npm:vite@^8.0.12"
+  },
+  "tasks": {
+    "dev": "deno run -A vite dev",
+    "build": "deno run -A @sveltejs/kit sync && deno run -A vite build",
+    "preview": "deno run -A vite preview",
+    "check": "deno run -A @sveltejs/kit sync && deno run -A svelte-check --tsconfig ./tsconfig.json --config ./vite.config.ts",
+    "check:watch": "deno run -A @sveltejs/kit sync && deno run -A svelte-check --tsconfig ./tsconfig.json --config ./vite.config.ts --watch",
+    "format": "deno fmt",
+    "lint": "deno fmt --check && deno lint"
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "singleQuote": false,
+    "semiColons": false
+  }
+}

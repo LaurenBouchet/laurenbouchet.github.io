@@ -1,21 +1,21 @@
 <script lang="ts">
-  import BookingButton from "#lib/components/BookingButton.svelte"
-  import Header from "#lib/components/Header.svelte"
-  import Head from "#lib/components/Head.svelte"
+import BookingButton from "#lib/components/BookingButton.svelte"
+import Header from "#lib/components/Header.svelte"
+import Head from "#lib/components/Head.svelte"
 
-  const concerns = [
-    "Douleurs pendant l’allaitement",
-    "Prise de poids insuffisante",
-    "Perte de poids du bébé",
-    "Bébé qui ne tète pas",
-    "Baisse de lactation",
-    "Coliques",
-    "Reprise du travail",
-    "Réduction mammaire",
-    "Diversification alimentaire",
-    "Sevrage",
-    "Utilisation du tire-allaitement",
-  ]
+const concerns = [
+  "Douleurs pendant l’allaitement",
+  "Prise de poids insuffisante",
+  "Perte de poids du bébé",
+  "Bébé qui ne tète pas",
+  "Baisse de lactation",
+  "Coliques",
+  "Reprise du travail",
+  "Réduction mammaire",
+  "Diversification alimentaire",
+  "Sevrage",
+  "Utilisation du tire-allaitement",
+]
 </script>
 
 <Head />
@@ -84,11 +84,19 @@
       </div>
     </section>
 
-    <section class="section pricing" id="tarifs" aria-labelledby="pricing-title">
-      <div class="section-heading"><h2 id="pricing-title">Mes tarifs</h2></div>
+    <section class="section pricing" id="tarifs"
+      aria-labelledby="pricing-title">
+      <div class="section-heading">
+        <h2 id="pricing-title">Mes tarifs</h2>
+      </div>
       <div class="table-wrap">
         <table>
-          <thead><tr><th scope="col">Consultation</th><th scope="col">Tarif</th></tr></thead>
+          <thead>
+            <tr>
+              <th scope="col">Consultation</th>
+              <th scope="col">Tarif</th>
+            </tr>
+          </thead>
           <tbody>
             <tr>
               <td>

@@ -1,18 +1,17 @@
 [tools]
-node = "24.21.0"
-npm = "12.0.2"
+deno = "2.9.7"
 
 [tasks.lint]
 description = "Check formatting and lint the project"
-run = "npm run lint"
+run = "deno task lint"
 
 [tasks.check]
 description = "Run Svelte and TypeScript checks"
-run = "npm run check"
+run = "deno task check"
 
 [tasks.build]
 description = "Build the production site"
-run = "npm run build"
+run = "deno task build"
 
 [tasks.pre-commit]
 description = "Run checks required before committing"
@@ -22,4 +21,3 @@ run = [
   { task = "check" },
   { task = "build" }
 ]
-

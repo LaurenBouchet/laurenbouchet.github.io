@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { page } from "$app/state"
-  import "../app.css"
+import { page } from "$app/state"
+import "../app.css"
 
-  let { children } = $props()
+let { children } = $props()
 </script>
 
 {#key page.url.pathname}

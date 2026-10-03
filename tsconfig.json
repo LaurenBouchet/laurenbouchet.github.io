@@ -1,7 +1,10 @@
 {
   "extends": "$app/tsconfig",
-  "include": ["src", "*"],
+  "include": ["src", "src/**/*.svelte", "*"],
   "compilerOptions": {
+    "paths": {
+      "#lib/*": ["./src/lib/*"]
+    },
     "allowJs": true,
     "checkJs": true,
     "esModuleInterop": true,
