@@ -1,5 +1,5 @@
 [tools]
-deno = "2.9.7"
+deno = "2.9.8"
 
 [tasks.lint]
 description = "Check formatting and lint the project"
