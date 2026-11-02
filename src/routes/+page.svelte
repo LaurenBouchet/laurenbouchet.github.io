@@ -5,18 +5,27 @@ import Head from "#lib/components/Head.svelte"
 import Faq from "#lib/components/Faq.svelte"
 import ConstructionBanner from "#lib/components/ConstructionBanner.svelte"
 
-const concerns = [
-  "Douleurs pendant l’allaitement",
-  "Prise de poids insuffisante",
-  "Perte de poids du bébé",
-  "Bébé qui ne tète pas",
-  "Baisse de lactation",
-  "Coliques",
-  "Reprise du travail",
-  "Réduction mammaire",
-  "Diversification alimentaire",
-  "Sevrage",
-  "Utilisation du tire-allaitement",
+const supportPrinciples = [
+  {
+    title: "Écouter d’abord",
+    description:
+      "Votre histoire, votre bébé et vos envies comptent plus que n’importe quelle règle.",
+  },
+  {
+    title: "Observer ensemble",
+    description:
+      "Position, mise au sein, tétées : nous regardons concrètement ce qui se passe, au calme.",
+  },
+  {
+    title: "Respecter vos choix",
+    description:
+      "Mon rôle est de vous donner des repères clairs pour que vous décidiez en confiance, pas de vous imposer une méthode.",
+  },
+  {
+    title: "Vous soutenir dans la durée",
+    description:
+      "Je reste disponible après la consultation pour ajuster, rassurer et suivre l’évolution.",
+  },
 ]
 </script>
 
@@ -29,18 +38,29 @@ const concerns = [
   <main>
     <section class="hero" id="accompagnements" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <h1 id="hero-title">
-          Être accompagnée dans votre allaitement, avant et après la naissance
-        </h1>
+        <h1 id="hero-title">L’allaitement, une étape dans nos vies</h1>
         <p class="intro">
-          Que vous soyez en train d’imaginer votre allaitement avant l’arrivée de bébé, que vous
-          sortiez de la maternité ou que vous rencontriez une difficulté (douleur, prise de poids
-          insuffisante, baisse de lactation, colique ou pleur du nourrisson, réduction mammaire,
-          diversification alimentaire, reprise du travail, tire-allaitement, sevrage) vous trouverez
-          dans la consultation un plan d’action pensé pour vous et votre bébé, à votre rythme.
+          Vous attendez un bébé, ou il est déjà là. Et vous vous posez mille questions sur
+          l’allaitement. Peut-être avez-vous entendu tout et son contraire, ou eu le sentiment de ne
+          pas être vraiment écoutée. Peut-être est-ce douloureux, vous demandez-vous si bébé prend
+          assez de poids ? Ici, vous pouvez poser votre fatigue, vos doutes et vos questions, sans
+          jugement.
+        </p>
+        <div class="hero-visual hero-visual-mobile" aria-hidden="true">
+          <div class="portrait-placeholder">
+            <span aria-hidden="true">✦</span>
+          </div>
+        </div>
+        <p class="intro">
+          Je m’appelle Lauren, je suis infirmière puéricultrice diplômée d’État et je me forme
+          actuellement à la certification IBCLC. Je travaille en néonatologie auprès des tout-petits
+          et des mamans, et j’accompagne des familles dans ces premiers jours où tout bascule. J’ai
+          aussi allaité mes deux enfants, sans jamais trouver un accompagnement serein. Je sais que
+          l’allaitement est beau, mais qu’il peut aussi être exigeant, et que personne ne devrait le
+          traverser seule.
         </p>
       </div>
-      <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual hero-visual-desktop" aria-hidden="true">
         <div class="portrait-placeholder">
           <span aria-hidden="true">✦</span>
         </div>
@@ -48,26 +68,43 @@ const concerns = [
       <div class="hero-services">
         <div class="service-grid">
           <article class="service-card">
-            <h3>Préparer votre allaitement</h3>
+            <h3>Vous attendez un bébé et souhaitez allaiter ?</h3>
             <p>
-              Avant la naissance, prenez le temps de poser vos questions et de préparer les
-              premières tétées avec confiance.
+              Premier allaitement, expérience précédente difficile, projet de tire-allaitement,
+              antécédent de chirurgie mammaire (augmentation ou réduction) : je vous donne des
+              repères clairs pour aborder votre projet avec confiance.
             </p>
-            <ul>
-              <li>Mieux appréhender votre projet d’allaitement</li>
-              <li>Mieux comprendre votre corps pour accueillir le bébé</li>
-            </ul>
           </article>
           <article class="service-card">
-            <h3>Pendant l’allaitement</h3>
+            <h3>Vous avez accouché et rencontrez des difficultés ?</h3>
             <p>
-              Des réponses concrètes aux difficultés rencontrées et aux nouvelles étapes à préparer.
+              Douleurs, crevasses, prise de poids insuffisante, pleurs de votre bébé… Vous n’avez pas
+              à traverser ces premiers jours seule. Je suis là pour vous écouter, observer avec vous
+              et trouver des solutions adaptées.
             </p>
-            <ul class="concern-list">
-              {#each concerns as concern (concern)}<li>{concern}</li>{/each}
-            </ul>
+          </article>
+          <article class="service-card">
+            <h3>Vous reprenez bientôt le travail ?</h3>
+            <p>
+              Utilisation du tire-lait, organisation des tétées, diversification alimentaire :
+              prenez rendez-vous pour en parler ensemble et préparer cette transition sereinement.
+            </p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section approach" aria-labelledby="approach-title">
+      <div class="section-heading">
+        <h2 id="approach-title">Ma façon de vous accompagner</h2>
+      </div>
+      <div class="approach-grid">
+        {#each supportPrinciples as principle (principle.title)}
+          <article>
+            <h3>{principle.title}</h3>
+            <p>{principle.description}</p>
+          </article>
+        {/each}
       </div>
     </section>
 

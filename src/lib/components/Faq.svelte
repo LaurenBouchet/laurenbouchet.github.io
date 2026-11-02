@@ -28,7 +28,7 @@ const questions = [
   {
     question: "Quelles sont les bonnes positions pour allaiter ?",
     answer:
-      "La bonne position sera la vôtre, celle qui vous conviendra et qui sera efficace : zéro douleur, une maman confortable et un bébé qui reçoit des quantités de lait suffisantes.",
+      "La bonne position sera la vôtre, celle qui vous conviendra et qui sera efficace : zéro douleur, une maman confortable et un bébé qui reçoit des quantités de lait suffisantes.",
   },
   {
     question: "Peut-on produire une quantité insuffisante de lait ?",
@@ -38,7 +38,7 @@ const questions = [
   {
     question: "Et si on me pousse à donner un biberon à la maternité ?",
     answer:
-      "Parfois, il arrive qu’il faille donner un complément à votre bébé, mais pourquoi pas un complément de lait maternel, le vôtre ? Pour cela, venez me parler de votre situation : nous pourrons envisager les différents scénarios.",
+      "Parfois, il arrive qu’il faille donner un complément à votre bébé, mais pourquoi pas un complément de lait maternel, le vôtre ? Pour cela, venez me parler de votre situation : nous pourrons envisager les différents scénarios.",
   },
   {
     question:
@@ -79,7 +79,7 @@ const questions = [
   {
     question: "J’ai mal quand mon bébé prend mon sein, est-ce normal ?",
     answer:
-      "On peut ressentir une sensibilité les premiers jours (cause hormonale), mais une douleur vive qui persiste tout au long de la tétée ou des crevasses ne sont pas normales. Elles viennent souvent d’une position ou d’une prise du sein à ajuster, ce qui se corrige généralement bien. N’attendez pas que la douleur s’installe : plus on agit tôt, plus c’est simple.",
+      "On peut ressentir une sensibilité les premiers jours (cause hormonale), mais une douleur vive qui persiste tout au long de la tétée ou des crevasses ne sont pas normales. Elles viennent souvent d’une position ou d’une prise du sein à ajuster, ce qui se corrige généralement bien. N’attendez pas que la douleur s’installe : plus on agit tôt, plus c’est simple.",
   },
   {
     question:
@@ -91,7 +91,7 @@ const questions = [
     question:
       "Mon bébé n’arrive pas à prendre le sein, il s’énerve, que faire ?",
     answer:
-      "Il arrive que certaines mises au sein soient compliquées : bébé pleure, ouvre la bouche mais ne tète pas, ne s’accroche pas. Pour plus de facilité, je vous oriente vers une mise au sein dès que le bébé est prêt à téter, c’est-à-dire en sommeil actif.",
+      "Il arrive que certaines mises au sein soient compliquées : bébé pleure, ouvre la bouche mais ne tète pas, ne s’accroche pas. Pour plus de facilité, je vous oriente vers une mise au sein dès que le bébé est prêt à téter, c’est-à-dire en sommeil actif.",
   },
 ]
 </script>
