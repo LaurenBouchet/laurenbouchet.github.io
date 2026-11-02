@@ -4,13 +4,7 @@ const safetyNotice =
 
 const questions = [
   {
-    question: "Où a lieu la consultation ?",
-    answer:
-      "À Dijon, en centre-ville, au cabinet, à votre domicile dans un rayon de 20 km, ou encore en visio.",
-  },
-  {
-    question:
-      "Comment se déroule la consultation, combien de temps dure-t-elle ?",
+    question: "Comment se déroule la consultation ?",
     answer:
       "Pendant environ 1 heure, je prends le temps de comprendre votre projet, vos envies, de déceler vos craintes. Si vous ne vous y opposez pas, je procède à une analyse clinique des seins. Si vous êtes en cours d’allaitement, j’analyse une tétée, vous en fais un retour et ajuste en fonction. Je réalise systématiquement la courbe de poids de votre bébé et vous en fais un retour également.",
   },
