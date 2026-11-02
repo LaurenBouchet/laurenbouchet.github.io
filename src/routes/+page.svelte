@@ -3,6 +3,7 @@ import BookingButton from "#lib/components/BookingButton.svelte"
 import Header from "#lib/components/Header.svelte"
 import Head from "#lib/components/Head.svelte"
 import Faq from "#lib/components/Faq.svelte"
+import ConstructionBanner from "#lib/components/ConstructionBanner.svelte"
 
 const concerns = [
   "Douleurs pendant l’allaitement",
@@ -22,6 +23,7 @@ const concerns = [
 <Head />
 
 <div class="site-shell">
+  <ConstructionBanner />
   <Header />
 
   <main>
