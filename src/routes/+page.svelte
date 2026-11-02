@@ -62,7 +62,7 @@ const supportPrinciples = [
           Vous attendez un bébé, ou il est déjà là. Et vous vous posez mille questions sur
           l’allaitement. Peut-être avez-vous entendu tout et son contraire, ou eu le sentiment de ne
           pas être vraiment écoutée. Peut-être est-ce douloureux, vous demandez-vous si bébé prend
-          assez de poids ? Ici, vous pouvez poser votre fatigue, vos doutes et vos questions, sans
+          assez de poids ? Ici, vous pouvez poser votre fatigue, vos doutes et vos questions, sans
           jugement.
         </p>
         <div class="hero-visual hero-visual-mobile" aria-hidden="true">
@@ -87,7 +87,7 @@ const supportPrinciples = [
       <div class="hero-services">
         <div class="service-grid">
           <article class="service-card">
-            <h3>Vous attendez un bébé et souhaitez allaiter ?</h3>
+            <h3>Vous attendez un bébé et souhaitez allaiter ?</h3>
             <p>
               Premier allaitement, expérience précédente difficile, projet de tire-allaitement,
               antécédent de chirurgie mammaire (augmentation ou réduction) : je vous donne des
@@ -95,7 +95,7 @@ const supportPrinciples = [
             </p>
           </article>
           <article class="service-card">
-            <h3>Vous avez accouché et rencontrez des difficultés ?</h3>
+            <h3>Vous avez accouché et rencontrez des difficultés ?</h3>
             <p>
               Douleurs, crevasses, prise de poids insuffisante, pleurs de votre bébé… Vous n’avez pas
               à traverser ces premiers jours seule. Je suis là pour vous écouter, observer avec vous
@@ -103,7 +103,7 @@ const supportPrinciples = [
             </p>
           </article>
           <article class="service-card">
-            <h3>Vous reprenez bientôt le travail ?</h3>
+            <h3>Vous reprenez bientôt le travail ?</h3>
             <p>
               Utilisation du tire-lait, organisation des tétées, diversification alimentaire :
               prenez rendez-vous pour en parler ensemble et préparer cette transition sereinement.

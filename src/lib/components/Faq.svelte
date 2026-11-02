@@ -43,7 +43,7 @@ const questions = [
   {
     question: "Je pense que mon bébé a un frein de langue, que faire ?",
     answer:
-      "C’est possible, mais cela gêne-t-il la prise du sein et la tétée ? Venez faire le point en consultation.",
+      "C’est possible, mais cela gêne-t-il la prise du sein et la tétée ? Venez faire le point en consultation.",
   },
   {
     question: "Comment savoir si mon bébé prend assez de lait ?",
