@@ -145,8 +145,8 @@ const supportPrinciples = [
           <LocationMap showRadius={true} />
         </article>
         <article>
-          <h3>En visioconférence</h3>
-          <p>Via Whatsapp ou autre</p>
+          <h3>À distance</h3>
+          <p>Via Whatsapp ou par téléphone</p>
           <div class="format-image" aria-hidden="true"></div>
         </article>
       </div>
