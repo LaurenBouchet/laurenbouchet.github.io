@@ -134,33 +134,32 @@ const supportPrinciples = [
           <thead>
             <tr>
               <th scope="col">Consultation</th>
-              <th scope="col">Tarif</th>
+              <th scope="col">Temps · Tarif</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <strong>Consultation allaitement — 1er rendez-vous</strong>
+                <strong>Consultation allaitement - 1er rendez-vous</strong>
                 <p>
                   Pour préparer votre allaitement ou poser toute question sur votre allaitement en
                   cours.
                 </p>
               </td>
-              <td>40 €</td>
+              <td>60 min · 50 €</td>
             </tr>
             <tr>
               <td>
-                <strong>Consultation de suivi</strong>
-                <p>Réservée aux patientes déjà suivies.</p>
+                <strong>Consultation de suivi - Réservé aux patientes déjà suivies</strong>
               </td>
-              <td>30 €</td>
+              <td>45 min · 40 €</td>
             </tr>
             <tr>
               <td>
-                <strong>SOS consultation allaitement</strong>
-                <p>Une réponse rapide dans la journée pour les situations urgentes, 7 j/7.</p>
+                <strong>SOS allaitement</strong>
+                <p>Une réponse rapide dans la journée pour les situations urgentes, 7j/7.</p>
               </td>
-              <td>35 €</td>
+              <td>30 min · 60 €</td>
             </tr>
           </tbody>
         </table>
