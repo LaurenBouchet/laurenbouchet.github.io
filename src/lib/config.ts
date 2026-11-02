@@ -1,3 +1,4 @@
 export const site = {
-  bookingUrl: null as string | null,
+  bookingUrl:
+    "https://lacteo.app/rdv/lauren-bouchet-allaitement-consultation-dijon",
 }
