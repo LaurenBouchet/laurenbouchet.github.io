@@ -1,51 +1,55 @@
 <script lang="ts">
+const safetyNotice =
+  "En cas de fièvre, de douleur intense ou de doute sur la santé de bébé, consultez un médecin ou appelez le 15."
+
 const questions = [
   {
     question: "Où a lieu la consultation ?",
     answer:
-      "À Dijon au centre ville, au cabinet, à votre domicile dans un rayon de 20 km ou encore en visio.",
-  },
-  {
-    question: "Comment se déroule la consultation, combien de temps ça dure ?",
-    answer:
-      "Pendant environ 1 heure je prends le temps de comprendre ton projet, tes envies, de déceler tes craintes. Si tu ne t'y opposes pas, je procède à une analyse clinique des seins. Si tu es en cours d'allaitement, j'analyse une tétée, t'en fais un retour et ajuste en fonction. Je réalise systématiquement la courbe de poids de ton bébé et t'en fais un retour également.",
+      "À Dijon, en centre-ville, au cabinet, à votre domicile dans un rayon de 20 km, ou encore en visio.",
   },
   {
     question:
-      "J'ai eu une chirurgie sur mes seins (prothèse, diminution) pourrais-je allaiter ?",
+      "Comment se déroule la consultation, combien de temps dure-t-elle ?",
     answer:
-      "Avec une réduction mammaire ou une augmentation, il est possible d'allaiter mais chaque femme est différente, viens me parler de ton projet (avec ton compte rendu opératoire) et je t'aiderai dans la pratique.",
+      "Pendant environ 1 heure, je prends le temps de comprendre votre projet, vos envies, de déceler vos craintes. Si vous ne vous y opposez pas, je procède à une analyse clinique des seins. Si vous êtes en cours d’allaitement, j’analyse une tétée, vous en fais un retour et ajuste en fonction. Je réalise systématiquement la courbe de poids de votre bébé et vous en fais un retour également.",
+  },
+  {
+    question:
+      "J’ai eu une chirurgie sur mes seins (prothèse, diminution), pourrais-je allaiter ?",
+    answer:
+      "Avec une réduction mammaire ou une augmentation, il est possible d’allaiter, mais chaque femme est différente. Venez me parler de votre projet (avec votre compte rendu opératoire) et je vous aiderai dans la pratique.",
   },
   {
     question: "Comment préparer mon allaitement pendant la grossesse ?",
     answer:
-      "Une consultation prénatale permet de comprendre le fonctionnement de la lactation, de savoir à quoi s'attendre les premiers jours, de repérer les situations qui demandent une vigilance particulière et de préparer ton entourage.",
+      "Une consultation prénatale permet de comprendre le fonctionnement de la lactation, de savoir à quoi s’attendre les premiers jours, de repérer les situations qui demandent une vigilance particulière et de préparer votre entourage.",
   },
   {
     question: "Quelles sont les bonnes positions pour allaiter ?",
     answer:
-      "La bonne position sera la tienne, celle qui te conviendra et qui sera efficace, zéro douleur, une maman confortable et un bébé qui reçoit des quantités de lait suffisantes.",
+      "La bonne position sera la vôtre, celle qui vous conviendra et qui sera efficace : zéro douleur, une maman confortable et un bébé qui reçoit des quantités de lait suffisantes.",
   },
   {
     question: "Peut-on produire une quantité insuffisante de lait ?",
     answer:
-      "En fonction de la conduite d'allaitement il est possible que la quantité ne soit pas optimale, en général cela se traduit sur la courbe de croissance, un bébé qui pleure beaucoup, ou au contraire qui dort beaucoup ou alors un bébé qui passe sa journée au sein.",
+      "En fonction de la conduite d’allaitement, il est possible que la quantité ne soit pas optimale. En général, cela se traduit sur la courbe de croissance, par un bébé qui pleure beaucoup, ou au contraire qui dort beaucoup, ou encore un bébé qui passe sa journée au sein.",
   },
   {
     question: "Et si on me pousse à donner un biberon à la maternité ?",
     answer:
-      "Parfois il arrive qu'il faille donner un complément à ton bébé, mais pourquoi pas un complément de lait maternel, le tien, pour cela vient me parler de ta situation nous pourrons appréhender les différents scénarii.",
+      "Parfois, il arrive qu’il faille donner un complément à votre bébé, mais pourquoi pas un complément de lait maternel, le vôtre ? Pour cela, venez me parler de votre situation : nous pourrons envisager les différents scénarios.",
   },
   {
     question:
-      "Si j'accouche par césarienne, comment faire pour démarrer mon allaitement ?",
+      "Si j’accouche par césarienne, comment faire pour démarrer mon allaitement ?",
     answer:
-      "Cela dépendra de l'établissement dans lequel vous allez accoucher, tous les protocoles ne sont pas uniformisés, mais si tu peux maîtriser l'expression manuelle du colostrum c'est déjà un plus.",
+      "Cela dépendra de l’établissement dans lequel vous allez accoucher, car tous les protocoles ne sont pas uniformisés. Mais si vous pouvez maîtriser l’expression manuelle du colostrum, c’est déjà un plus.",
   },
   {
     question: "Je pense que mon bébé a un frein de langue, que faire ?",
     answer:
-      "C'est possible, mais cela gène t il la prise du sein et la tétée ? Vient faire le point en consultation.",
+      "C’est possible, mais cela gêne-t-il la prise du sein et la tétée ? Venez faire le point en consultation.",
   },
   {
     question: "Comment savoir si mon bébé prend assez de lait ?",
@@ -55,39 +59,39 @@ const questions = [
   {
     question: "Mon bébé tète tout le temps, ai-je assez de lait ?",
     answer:
-      "Le nouveau né est naturellement programmé pour téter. Parfois, lorsque le transfert de lait n'est pas optimal, que la tétée n'est donc pas assez efficace, c'est possible que le nouveau né soit \"constamment au sein\". Ces situations sont souvent épuisantes pour la maman, mais heureusement il y a des remèdes à ce comportement.",
+      "Le nouveau-né est naturellement programmé pour téter. Parfois, lorsque le transfert de lait n’est pas optimal et que la tétée n’est donc pas assez efficace, il est possible que le nouveau-né soit « constamment au sein ». Ces situations sont souvent épuisantes pour la maman, mais heureusement il existe des remèdes à ce comportement.",
   },
   {
     question: "Pourquoi ai-je des crevasses ?",
     answer:
-      "Les crevasses sont souvent dues à une mauvaise prise du sein en bouche par le bébé ou encore à un tire-lait mail utilisé ou encore à une infection en cours, viens faire le point sur ta situation.",
+      "Les crevasses sont souvent dues à une mauvaise prise du sein en bouche par le bébé, à un tire-lait mal utilisé ou encore à une infection en cours. Venez faire le point sur votre situation.",
   },
   {
     question: "Comment utiliser un tire-lait ?",
     answer:
-      "Plusieurs tailles de téterelles existent sur le marché en fonction du modèle de tire lait que tu utilises, la téterelle ne doit pas te blesser et les fréquences de tirage sont à adapter en fonction de ta situation.",
+      "Plusieurs tailles de téterelles existent sur le marché en fonction du modèle de tire-lait que vous utilisez. La téterelle ne doit pas vous blesser et les fréquences de tirage sont à adapter en fonction de votre situation.",
   },
   {
     question: "Puis-je continuer à allaiter en reprenant le travail ?",
     answer:
-      "Oui, c'est tout à fait possible. Selon ton organisation et l'allaitement en cours, nous construisons ensemble un plan réaliste, adapté à ton rythme et à ton mode de garde.",
+      "Oui, c’est tout à fait possible. Selon votre organisation et l’allaitement en cours, nous construisons ensemble un plan réaliste, adapté à votre rythme et à votre mode de garde.",
   },
   {
-    question: "J'ai mal quand mon bébé prend mon sein est ce normal ?",
+    question: "J’ai mal quand mon bébé prend mon sein, est-ce normal ?",
     answer:
-      "On peut ressentir une sensibilité les premiers jours (cause hormonale), mais une douleur vive qui persiste tout au long de la tétée ou des crevasses ne sont pas normales. Elles viennent souvent d'une position ou d'une prise du sein à ajuster, ce qui se corrige généralement bien. N'attends pas que la douleur s'installe : plus on agit tôt, plus c'est simple.",
-  },
-  {
-    question:
-      "Je voudrais faire participer le papa dans l'allaitement, comment faire ?",
-    answer:
-      "Allaiter demande à la maman une grande disponibilité et papa ou le co-parent n'est pas là uniquement pour changer les couches. Une maman apprécie toujours que le papa se rende disponible pour bercer bébé, libérer la maman pour qu'elle aille prendre une douche, faire une sieste.",
+      "On peut ressentir une sensibilité les premiers jours (cause hormonale), mais une douleur vive qui persiste tout au long de la tétée ou des crevasses ne sont pas normales. Elles viennent souvent d’une position ou d’une prise du sein à ajuster, ce qui se corrige généralement bien. N’attendez pas que la douleur s’installe : plus on agit tôt, plus c’est simple.",
   },
   {
     question:
-      "Mon bébé n’arrive pas à prendre le sein, il s'énerve, que faire ?",
+      "Je voudrais faire participer le papa à l’allaitement, comment faire ?",
     answer:
-      "Il arrive que certaines mises au sein soient compliquées, bébé pleure, ouvre la bouche mais ne tète pas, ne s'accroche pas. Pour plus de facilités, je t'oriente vers une mise au sein dès que le bébé est prêt à téter, c'est-à-dire en sommeil actif.",
+      "Allaiter demande à la maman une grande disponibilité, et le papa ou le co-parent n’est pas là uniquement pour changer les couches. Une maman apprécie toujours que le papa se rende disponible pour bercer bébé, la libérer afin qu’elle aille prendre une douche ou faire une sieste.",
+  },
+  {
+    question:
+      "Mon bébé n’arrive pas à prendre le sein, il s’énerve, que faire ?",
+    answer:
+      "Il arrive que certaines mises au sein soient compliquées : bébé pleure, ouvre la bouche mais ne tète pas, ne s’accroche pas. Pour plus de facilité, je vous oriente vers une mise au sein dès que le bébé est prêt à téter, c’est-à-dire en sommeil actif.",
   },
 ]
 </script>
@@ -104,6 +108,7 @@ const questions = [
         <p>{item.answer}</p>
       </details>
     {/each}
+    <p class="faq-note">{safetyNotice}</p>
   </div>
 </section>
 
@@ -162,6 +167,11 @@ summary:focus-visible {
 details p {
   margin: 0;
   padding: 0 4px 24px;
+  color: var(--muted);
+}
+
+.faq-note {
+  margin: 24px 4px 0;
   color: var(--muted);
 }
 </style>
