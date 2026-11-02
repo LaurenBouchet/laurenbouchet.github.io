@@ -159,6 +159,11 @@ nav a:hover,
   background: var(--cream);
   border-color: var(--cream);
 }
+.booking-button.inverse:not(:disabled):hover {
+  color: var(--deep);
+  background: var(--sand);
+  border-color: var(--sand);
+}
 main {
   width: min(1280px, calc(100% - 48px));
   margin: auto;
