@@ -17,6 +17,7 @@
     "@sveltejs/kit": "npm:@sveltejs/kit@^3.1.1",
     "@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^7.3.1",
     "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.3",
+    "maplibre-gl": "npm:maplibre-gl@^6.16.0",
     "svelte": "npm:svelte@^5.57.3",
     "svelte-check": "npm:svelte-check@^4.7.7",
     "tailwindcss": "npm:tailwindcss@^4.3.3",

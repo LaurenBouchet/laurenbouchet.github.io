@@ -4,6 +4,25 @@ import Header from "#lib/components/Header.svelte"
 import Head from "#lib/components/Head.svelte"
 import Faq from "#lib/components/Faq.svelte"
 import ConstructionBanner from "#lib/components/ConstructionBanner.svelte"
+import LocationMap from "#lib/components/LocationMap.svelte"
+
+const cabinetMapUrl =
+  "https://www.openstreetmap.org/?mlat=47.325949&mlon=5.046676#map=17/47.325949/5.046676"
+
+function openCabinetMap(event: MouseEvent) {
+  if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+  const isAndroid = /Android/i.test(navigator.userAgent)
+  const isAppleMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
+  if (!isAndroid && !isAppleMobile) return
+
+  event.preventDefault()
+  const address = encodeURIComponent("3 boulevard Thiers, 21000 Dijon")
+  const appUrl = isAndroid
+    ? `geo:47.325949,5.046676?q=${address}`
+    : `maps://?ll=47.325949,5.046676&q=${address}`
+  window.location.href = appUrl
+}
 
 const supportPrinciples = [
   {
@@ -99,9 +118,9 @@ const supportPrinciples = [
         <h2 id="approach-title">Ma façon de vous accompagner</h2>
       </div>
       <div class="approach-grid">
-        {#each supportPrinciples as principle (principle.title)}
+        {#each supportPrinciples as principle, index (principle.title)}
           <article>
-            <h3>{principle.title}</h3>
+            <h3><span class="approach-number">{index + 1}.</span> {principle.title}</h3>
             <p>{principle.description}</p>
           </article>
         {/each}
@@ -109,17 +128,26 @@ const supportPrinciples = [
     </section>
 
     <section class="section format" aria-labelledby="format-title">
-      <h2 id="format-title">Où je vous accompagne</h2>
+      <h2 id="format-title">Où se retrouver</h2>
       <div class="format-items">
         <article>
-          <div class="format-image" aria-hidden="true"></div>
-          <h3>À Dijon, et ses alentours</h3>
-          <p>Dans un rayon de 20 km.</p>
+          <a class="location-link"
+            href={cabinetMapUrl} target="_blank" rel="noopener noreferrer"
+            onclick={openCabinetMap}>
+            <h3>À mon cabinet</h3>
+            <p>3 boulevard Thiers, 21000 Dijon</p>
+          </a>
+          <LocationMap />
         </article>
         <article>
-          <div class="format-image" aria-hidden="true"></div>
+          <h3>À votre domicile</h3>
+          <p>À Dijon et dans un rayon de 20 km.</p>
+          <LocationMap showRadius={true} />
+        </article>
+        <article>
           <h3>En visioconférence</h3>
           <p>Via Whatsapp ou autre</p>
+          <div class="format-image" aria-hidden="true"></div>
         </article>
       </div>
     </section>
