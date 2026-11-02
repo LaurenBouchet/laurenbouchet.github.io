@@ -2,6 +2,7 @@
 import { onMount } from "svelte"
 import type { Map as MapLibreMap } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
+import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url"
 
 let { showRadius = false }: { showRadius?: boolean } = $props()
 const center: [number, number] = [5.046676, 47.325949]
@@ -47,9 +48,15 @@ onMount(() => {
     observer.disconnect()
 
     try {
-      const { AttributionControl, Map, Marker, NavigationControl } =
-        await import("maplibre-gl")
+      const {
+        AttributionControl,
+        Map,
+        Marker,
+        NavigationControl,
+        setWorkerUrl,
+      } = await import("maplibre-gl")
       if (disposed) return
+      setWorkerUrl(workerUrl)
       map = new Map({
         container,
         style: "https://tiles.openfreemap.org/styles/liberty",
