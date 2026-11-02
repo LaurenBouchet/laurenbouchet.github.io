@@ -5,8 +5,8 @@
 <style>
 .construction-banner {
   padding: 10px 16px;
-  background: #f2d38b;
-  color: #302719;
+  background: var(--sand);
+  color: var(--deep);
   text-align: center;
   font-size: 0.9rem;
   font-weight: 700;

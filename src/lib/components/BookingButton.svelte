@@ -8,12 +8,12 @@ let { inverse = false }: { inverse?: boolean } = $props()
   <!-- The booking URL points to an external service. -->
   <a class:inverse class="booking-button" href={site.bookingUrl} target="_blank"
   rel="noreferrer">
-    Prendre rendez‑vous
-    <span aria-hidden="true">↗</span>
-  </a>
+  <span class="booking-label">Prendre rendez‑vous</span>
+  <span aria-hidden="true">↗</span>
+</a>
 {:else}
   <button class:inverse class="booking-button" disabled>
-    Prendre rendez‑vous
-    <span aria-hidden="true">↗</span>
-  </button>
+  <span class="booking-label">Prendre rendez‑vous</span>
+  <span aria-hidden="true">↗</span>
+</button>
 {/if}
