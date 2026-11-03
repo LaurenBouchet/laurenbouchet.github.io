@@ -196,7 +196,7 @@ const supportPrinciples = [
 
     <section class="section reviews" aria-labelledby="reviews-title">
       <div class="review-content">
-        <h2 id="reviews-title">Témoigniage</h2>
+        <h2 id="reviews-title">Témoignage</h2>
         <figure>
           <blockquote>
             <p>
