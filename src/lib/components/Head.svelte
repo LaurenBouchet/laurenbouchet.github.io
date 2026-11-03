@@ -25,7 +25,7 @@
     "@type": "ProfessionalService",
     "name": "Lauren Bouchet",
     "description": "À Dijon et en visio, Lauren Bouchet vous aide à préparer votre allaitement et à faire le point sur les douleurs, les tétées ou la prise de poids du bébé.",
-    "areaServed": "Dijon et ses environs, dans un rayon d’environ 30 km",
+    "areaServed": "Dijon et ses environs, dans un rayon d’environ 20 km",
     "url": "https://laurenbouchet.fr"
   }
   </script>
