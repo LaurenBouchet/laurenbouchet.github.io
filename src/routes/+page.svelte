@@ -5,6 +5,7 @@ import Head from "#lib/components/Head.svelte"
 import Faq from "#lib/components/Faq.svelte"
 import ConstructionBanner from "#lib/components/ConstructionBanner.svelte"
 import LocationMap from "#lib/components/LocationMap.svelte"
+import TestimonialRotator from "#lib/components/TestimonialRotator.svelte"
 
 const cabinetMapUrl =
   "https://www.openstreetmap.org/?mlat=47.325949&mlon=5.046676#map=17/47.325949/5.046676"
@@ -196,43 +197,8 @@ const supportPrinciples = [
 
     <section class="section reviews" aria-labelledby="reviews-title">
       <div class="review-content">
-        <h2 id="reviews-title">Témoignage</h2>
-        <figure>
-          <blockquote>
-            <p>
-              « Lauren m’a accompagnée pendant les premières semaines de mon allaitement, une
-              période aussi merveilleuse qu’intense, où l’on peut rapidement se retrouver avec
-              beaucoup de questions, de doutes et d’émotions.
-            </p>
-            <p>
-              Ce que j’ai particulièrement apprécié chez Lauren, c’est la combinaison assez rare
-              entre une véritable expertise de l’allaitement et une très grande qualité d’écoute.
-              Elle maîtrise parfaitement les aspects techniques — positionnement, prise du sein,
-              rythme des tétées, lactation, petits ajustements du quotidien — mais elle sait surtout
-              observer, écouter et comprendre ce dont une maman a besoin à un moment donné.
-            </p>
-            <p>
-              Lauren a été extrêmement attentive aux détails et très proactive. Elle ne se
-              contentait pas de répondre à mes questions&nbsp;: elle observait, anticipait certaines
-              difficultés et me proposait des solutions très concrètes et adaptées à ma situation.
-              J’ai également beaucoup apprécié sa capacité à comprendre mes états d’esprit, à sentir
-              les moments où j’avais besoin d’être rassurée, encouragée ou simplement écoutée,
-              toujours avec beaucoup de douceur et sans jamais être intrusive.
-            </p>
-            <p>
-              Dans ces premières semaines où l’on apprend à connaître son bébé tout en prenant
-              confiance dans son propre rôle de maman, avoir à ses côtés quelqu’un d’aussi
-              compétent, bienveillant et attentif fait une vraie différence.
-            </p>
-            <p>
-              Lauren m’a apporté à la fois des connaissances, des solutions concrètes et beaucoup de
-              confiance. Je lui suis profondément reconnaissante pour son accompagnement et je la
-              recommande sans hésitation à toutes les mamans qui souhaitent être accompagnées dans
-              leur allaitement avec expertise, douceur et humanité. »
-            </p>
-          </blockquote>
-          <figcaption>Andreea</figcaption>
-        </figure>
+        <h2 id="reviews-title">Témoignages</h2>
+        <TestimonialRotator />
       </div>
     </section>
 

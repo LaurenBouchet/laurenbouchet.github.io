@@ -643,37 +643,6 @@ td:nth-child(n + 2) {
 .review-content h2 {
   margin-bottom: 46px;
 }
-.review-content figure {
-  margin: 0;
-  padding: clamp(28px, 4vw, 56px);
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 18px 40px rgba(85, 60, 50, 0.08);
-}
-.review-content blockquote {
-  margin: 0;
-  color: var(--ink);
-  font:
-    1.16rem/1.75 Georgia,
-    "Times New Roman",
-    serif;
-}
-.review-content blockquote p {
-  margin: 0 0 20px;
-}
-.review-content figcaption {
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
-  color: var(--terracotta);
-  font-size: 0.86rem;
-  font-weight: 700;
-  text-align: right;
-}
-.review-content figcaption:before {
-  content: "— ";
-}
 
 main {
   --section-padding-block: 96px;
@@ -759,14 +728,6 @@ main {
   main {
     --section-padding-block: 48px;
     --section-padding-inline: 20px;
-  }
-  .review-content blockquote {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  .review-content figure {
-    padding: 24px;
-    border-radius: 12px;
   }
   .review-content h2 {
     margin-bottom: 28px;
