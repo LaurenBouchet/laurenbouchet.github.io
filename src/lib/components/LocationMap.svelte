@@ -1,7 +1,6 @@
 <script lang="ts">
 import { onMount } from "svelte"
 import type { Map as MapLibreMap } from "maplibre-gl"
-import "maplibre-gl/dist/maplibre-gl.css"
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url"
 
 let { showRadius = false }: { showRadius?: boolean } = $props()
@@ -48,13 +47,16 @@ onMount(() => {
     observer.disconnect()
 
     try {
-      const {
+      const [{
         AttributionControl,
         Map,
         Marker,
         NavigationControl,
         setWorkerUrl,
-      } = await import("maplibre-gl")
+      }] = await Promise.all([
+        import("maplibre-gl"),
+        import("maplibre-gl/dist/maplibre-gl.css"),
+      ])
       if (disposed) return
       setWorkerUrl(workerUrl)
       map = new Map({
