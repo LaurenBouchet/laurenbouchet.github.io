@@ -62,13 +62,9 @@ onMount(() => {
         style: "https://tiles.openfreemap.org/styles/liberty",
         center,
         zoom: showRadius ? 9 : 14,
-        scrollZoom: false,
-        dragRotate: false,
-        touchPitch: false,
+        interactive: false,
         attributionControl: false,
       })
-      map.touchZoomRotate.disableRotation()
-      map.keyboard.disableRotation()
       map.addControl(new AttributionControl({ compact: true }), "bottom-right")
       map.addControl(new NavigationControl({ showCompass: false }), "top-right")
       if (!showRadius) {
