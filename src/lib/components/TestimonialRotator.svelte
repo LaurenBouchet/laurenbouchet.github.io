@@ -5,22 +5,22 @@ const testimonials = [
   {
     content:
       "Lauren m’a apporté à la fois des connaissances, des solutions concrètes et beaucoup de confiance. Je lui suis profondément reconnaissante pour son accompagnement et je la recommande sans hésitation à toutes les mamans qui souhaitent être accompagnées dans leur allaitement avec expertise, douceur et humanité.",
-    author: { name: "Andreea", avartarUrl: "/testimonial-default-avatar.svg" },
+    author: { name: "Andreea" },
   },
   {
     content:
       "Lauren est une professionnelle très qualifiée. Elle est douce, à l’écoute et bienveillante. Notre consultation s’est très bien passé, elle a prit le temps de répondre à toutes mes interrogations, m’a donné de précieux conseils avec beaucoup de douceurs et sans aucun jugement. Je me suis sentie écoutée, comprise et rassurée. Un accompagnement de qualité merci.",
-    author: { name: "Chloé", avartarUrl: "/testimonial-default-avatar.svg" },
+    author: { name: "Chloé" },
   },
   {
     content:
       "Lauren m’a accompagné durant mon allaitement, ayant eu une réduction mammaire j’avais des doutes sur la possibilité d’allaiter et cela a fonctionné grâce à tous ses conseils et son accompagnement. Elle est bienveillante et investie pour répondre au mieux à nos demandes. Je la recommande à 100%.",
-    author: { name: "Alexia", avartarUrl: "/testimonial-default-avatar.svg" },
+    author: { name: "Alexia" },
   },
   {
     content:
       "Merci Lauren pour cette consultation, j’ai adoré cet échange. Votre douceur et votre bienveillance permet de se sentir en confiance et à l’écoute. Et merci encore pour tous vos précieux conseils ! C’est pour moi une belle rencontre.",
-    author: { name: "Magali", avartarUrl: "/testimonial-default-avatar.svg" },
+    author: { name: "Magali" },
   },
 ]
 

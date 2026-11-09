@@ -1,7 +1,7 @@
 <script lang="ts">
 let { content, author, position, total }: {
   content: string
-  author: { name: string; avartarUrl: string }
+  author: { name: string }
   position: number
   total: number
 } = $props()
@@ -15,12 +15,7 @@ let textScale = $derived(
   aria-label={`${position} sur ${total}`}
   style:--testimonial-text-scale={textScale}>
   <blockquote>« {content} »</blockquote>
-  <figcaption>
-    <span class="testimonial-avatar" aria-hidden="true">
-      <img src={author.avartarUrl} alt="" />
-    </span>
-    <span>{author.name}</span>
-  </figcaption>
+  <figcaption>— {author.name}</figcaption>
 </figure>
 
 <style>
@@ -45,33 +40,11 @@ blockquote {
   white-space: pre-line;
 }
 figcaption {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid var(--line);
+  margin-top: 24px;
   color: var(--terracotta);
   font-size: 1rem;
   font-weight: 700;
   text-align: right;
-}
-.testimonial-avatar {
-  display: grid;
-  flex: 0 0 48px;
-  width: 48px;
-  height: 48px;
-  place-items: center;
-  overflow: hidden;
-  border-radius: 50%;
-  background: var(--sand);
-  color: var(--terracotta);
-}
-.testimonial-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 @media (max-width: 800px) {
   .testimonial-card {
