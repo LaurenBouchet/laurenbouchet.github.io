@@ -10,7 +10,7 @@ const testimonials = [
   {
     content:
       "Lauren est une professionnelle très qualifiée. Elle est douce, à l’écoute et bienveillante. Notre consultation s’est très bien passé, elle a prit le temps de répondre à toutes mes interrogations, m’a donné de précieux conseils avec beaucoup de douceurs et sans aucun jugement. Je me suis sentie écoutée, comprise et rassurée. Un accompagnement de qualité merci.",
-    author: { name: "Clara", avartarUrl: "/testimonial-default-avatar.svg" },
+    author: { name: "Chloé", avartarUrl: "/testimonial-default-avatar.svg" },
   },
   {
     content:
