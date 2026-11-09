@@ -86,6 +86,7 @@ const supportPrinciples = [
         </div>
       </div>
       <div class="hero-services">
+        <h2 class="sr-only">Mes accompagnements</h2>
         <div class="service-grid">
           <article class="service-card">
             <h3>Vous attendez un bébé et souhaitez allaiter ?</h3>
