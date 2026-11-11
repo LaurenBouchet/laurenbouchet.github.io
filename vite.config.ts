@@ -11,10 +11,10 @@ export default defineConfig({
   plugins: [
     sveltekit({
       preprocess: vitePreprocess(),
+      paths: { relative: false },
       adapter: adapter({
         pages: "build",
         assets: "build",
-        fallback: "404.html",
         precompress: false,
         strict: true,
       }),
