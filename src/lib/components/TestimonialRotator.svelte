@@ -22,6 +22,11 @@ const testimonials = [
       "Merci Lauren pour cette consultation, j’ai adoré cet échange. Votre douceur et votre bienveillance permet de se sentir en confiance et à l’écoute. Et merci encore pour tous vos précieux conseils ! C’est pour moi une belle rencontre.",
     author: { name: "Magali" },
   },
+  {
+    content:
+      "Consultation très instructive auprès de Lauren quant à mon allaitement en cours. Elle a su répondre avec clarté et précision à toutes mes questions, à travers une approche rassurante et bienveillante. Je la recommande les yeux fermés.",
+    author: { name: "Mallorie" },
+  },
 ]
 
 let rotator: HTMLDivElement
